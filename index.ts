@@ -1,19 +1,8 @@
-type person = {
-  name: string;
-  age: number;
-  isStudent: boolean;
-};  
-let person1: person = {
-  name: "John",
-  age: 25,
-  isStudent: false,
-};        
+// literal and  unions 
+type User = {
+  username: string;
+  role:  "guest " | "member" | "admin";
+}
+type UserRole = "guest " | "member" | "admin";
 
-let person2: person = {
-  name: "Jane",
-  age: 22,
-  isStudent: true,
-};  
-
-let people: person[] = [person1, person2]; 
-// let people: Array<person> = [person1, person2]; is the same as above
+let userRole: UserRole = "member";  
