@@ -1,6 +1,19 @@
-let myName: string = "Ismail Shariff";
-// primitive data types: string, number, boolean, null, undefined, symbol
-// challenge: Explicity type the variables below
+// defining custom types
 
-let numberOfWheels: number = 4;
-let isStudent: boolean = false;
+type Person = {
+  name: string;
+  age: number;
+  isStudent: boolean;
+};
+
+let person1: Person = {
+  name: "Ismail",
+  age: 25,
+  isStudent: true,
+};
+
+let person2: Person = {
+  name: "John",
+  age: 66,
+  isStudent: true,
+};
